@@ -1,0 +1,52 @@
+--------------------------------------------------------------------
+Note: This software is obviously old and deprecated (who uses dos
+nowadays??). But it still is a good way to learn about certaing things.
+Enjoy ;)
+--------------------------------------------------------------------
+                        Read Boot and Write Boot 1.0
+                        ----------------------------
+                                Copyright (c) 1999 by Marcelo Gornstein <marcelog@gmail.com>
+
+
+Yes. It's me again. Hi. This time with some DOS stuff.
+Well, I started this two little, nice and useful (I guess) programs
+because I had the right computer with the right compiler in the right
+boring class ;).
+Ok, Read Boot reads the boot sector (sector 0) from the first floppy
+drive (A) and writes it to a file. You may pass the filename as the
+first argument. If no filename is given, it will be called "BOOT.SCT".
+
+For example:
+C:\>rboot                  will download the boot sector to the file boot.sct
+C:\>rboot file.ext         will download the boot sector to the file file.ext
+
+And Write Boot makes the exact opposite. Reads 512 bytes from a file and
+then overwrites the boot sector.
+
+For example:
+C:\>wboot                  will read the file boot.sct
+C:\>wboot file.ext         will read the file file.ext
+
+Is this useful?
+---------------
+Well, that depends. First of all, I did this programs with an educational
+intention.  No, don't laugh. It's true ;)
+But let's face it....I did collect viruses during the DOS era. And with
+this program you may continue your collection by just "grabbing" the
+boot sector virus from the floppy and putting it in a file.
+And how about "grabbing" a known-clean boot sector and disinfect
+any floppy from ANY boot sector virus in a few seconds?
+I included some images for your own experiment.
+
+Notes:
+-----
+This program is under the GNU/GPL version 2 license.
+Both programs do compile with A86. But you should have no problems with
+other compilers.
+I (Marcelo Gornstein) don't take any responsability from the consequences
+derived from your use of these two programs. Legal stuff, you know. Had
+to be there ;)
+
+Send me your comments, suggestions, etc.
+
+Regards,
